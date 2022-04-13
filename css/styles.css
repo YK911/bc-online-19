@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Налаштування адаптивних зображень */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.content-box {
+  box-sizing: content-box;
+}
+
+.page {
+  margin: 0;
+  width: 100vw;
+  padding-bottom: 150px;
+  /* height: 100vh; */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  outline: 1px solid red;
+  /* border: 20px dashed red;
+  border-bottom: none; */
+
+  /* border-right: 40px solid transparent;
+  border-left: 10px dotted red;
+  border-bottom: 20px dashed red; */
+
+  padding: 30px 50px;
+
+  /* padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px; */
+
+  width: 585px;
+  /* height: 240px; */
+
+  background-color: #455a64;
+  font-size: 25px;
+  color: white;
+  /* margin: 0 auto; */
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+.block {
+  width: 500px;
+  margin-left: 100px;
+}
+
+.inner-block {
+  margin-bottom: 20px;
+  outline: 1px dotted red;
+}
+
+.line {
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+
+  background: rgba(157, 164, 189, 0.6);
+}
+
+.top-text {
+  display: inline-block;
+}
+
+.title {
+  margin-bottom: 20px;
+
+  outline: 1px dashed red;
+}
+
+.bottom-text {
+  outline: 1px solid red;
+}
+
+.group {
+  margin-top: 50px;
+}
+
+.button {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  color: wheat;
+}
+
+.button:nth-child(1) {
+  background-color: tomato;
+}
+.button:nth-child(2) {
+  background-color: blueviolet;
+}
+.button:nth-child(3) {
+  background-color: hotpink;
+}
+
+
+.thumb {
+  /* width: 640px; */
+display: inline;
+  background-color: red;
+  margin-top: 150px;
+}
+
+.thumb-text {
+  background-color: aqua;
+}
+
+.thumb-text {
+  width: 500px;
+}
