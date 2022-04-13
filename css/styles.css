@@ -1,0 +1,83 @@
+.page {
+  font-family: "Open Sans", sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.uppertitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.uppertitle-theme-light {
+  color: #303030;
+}
+
+.uppertitle-theme-dark {
+  color: hsla(227, 20%, 68%, 0.6);
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: #303030;
+}
+
+.title-theme-light {
+  color: #303030;
+}
+
+.title-theme-dark {
+  color: #ffffff;
+}
+
+.link-item {
+  display: block;
+  width: 120px;
+  height: 120px;
+  outline: 1px solid red;
+}
+
+.icon-list:hover .icon {
+  fill: red;
+}
+
+.box {
+  display: flex;
+
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+
+  background-color: rgb(135, 138, 222);
+}
+
+.inner-box {
+  width: 100px;
+  height: 100px;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.inner-box:nth-child(1) {
+  background-color: hotpink;
+}
+.inner-box:nth-child(2) {
+  background-color: blueviolet;
+}
+.inner-box:nth-child(3) {
+  font-size: 40px;
+  background-color: tomato;
+}
+.inner-box:nth-child(4) {
+  background-color: goldenrod;
+}
