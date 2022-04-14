@@ -23,7 +23,7 @@
   <body class="page">
     <!-- Header section -->
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <a class="header-link" href="./index.html">
           <img
             class="header-logo"
@@ -49,12 +49,14 @@
             </li>
           </ul>
         </nav>
-        <a class="header-phone link" href="tel:+380441111111"
-          >+38 044 111 11 11</a
-        >
-        <button class="main-btn main-btn-mode-dark" type="button">
-          онлайн-запись
-        </button>
+        <div class="header-group">
+          <a class="header-phone link" href="tel:+380441111111"
+            >+38 044 111 11 11</a
+          >
+          <button class="main-btn main-btn-mode-dark" type="button">
+            онлайн-запись
+          </button>
+        </div>
       </div>
     </header>
 
@@ -95,7 +97,7 @@
 
       <!-- About us section -->
       <section class="section about">
-        <div class="container">
+        <div class="container about-container">
           <ul class="about-list list">
             <li class="about-item">
               <img
@@ -118,21 +120,23 @@
           </ul>
           <div class="about-right-side">
             <p class="uppertitle uppertitle-mode-light">О нас</p>
-          <h2 class="title title-mode-light">Лучший Барбершоп твоего города</h2>
-          <h3 class="subtitle subtitle-mode-light about-subtitle">
-            Если ты хочешь добавить в свой образ больше уверенности – тебе точно
-            к нам.
-          </h3>
-          <p class="about-descr">
-            Мы команда, которая никогда не останавливается на достигнутом и
-            жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
-            никогда не сможешь быть прежним. Мы команда, которая всегда с
-            клиентами "на одной волне". Поэтому, мы всегда готовы
-            усовершенствовать каждого, кто к нам приходит!
-          </p>
-          <button class="main-btn main-btn-mode-light" type="button">
-            онлайн-запись
-          </button>
+            <h2 class="title title-mode-light">
+              Лучший Барбершоп твоего города
+            </h2>
+            <h3 class="subtitle subtitle-mode-light about-subtitle">
+              Если ты хочешь добавить в свой образ больше уверенности – тебе
+              точно к нам.
+            </h3>
+            <p class="about-descr">
+              Мы команда, которая никогда не останавливается на достигнутом и
+              жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
+              никогда не сможешь быть прежним. Мы команда, которая всегда с
+              клиентами "на одной волне". Поэтому, мы всегда готовы
+              усовершенствовать каждого, кто к нам приходит!
+            </p>
+            <button class="main-btn main-btn-mode-light" type="button">
+              онлайн-запись
+            </button>
           </div>
         </div>
       </section>
@@ -196,7 +200,7 @@
 
       <!-- Advantages section -->
       <section class="section advantages">
-        <div class="container">
+        <div class="container advantages-container">
           <ul class="advantages-list list">
             <li class="advantages-item">
               <p class="advantages-quantity">600</p>
@@ -215,11 +219,14 @@
               <p class="advantages-descr">Подарков постоянным клиентам</p>
             </li>
           </ul>
+
           <div class="advantages-right-side">
             <p class="uppertitle uppertitle-mode-light">
               старая традиционная школа
             </p>
-            <h2 class="title title-mode-light">Почему приходят именно к нам?</h2>
+            <h2 class="title title-mode-light">
+              Почему приходят именно к нам?
+            </h2>
             <p class="subtitle subtitle-mode-light">
               О нас говорят только хорошее. Но лучше 1 раз увидеть и
               прочувствовать, чем 10 раз прочитать.
@@ -235,8 +242,8 @@
             для настоящих ценителей атмосферы
           </p>
           <h2 class="title title-mode-light">Наши мастера</h2>
-          <ul class="team-list list">
-            <li class="team-member">
+          <ul class="team-list list grid">
+            <li class="team-member grid-item">
               <img
                 class="team-avatar"
                 src="./images/team/img1.jpg"
@@ -244,24 +251,26 @@
                 width="370"
                 height="346"
               />
-              <h3 class="team-headline">John Smith</h3>
-              <p class="team-position" lang="en">Extreme Barber</p>
-              <ul class="socials list">
-                <li class="socials-item">
-                  <a class="socials-link link" href="">Instagram</a>
-                </li>
-                <li class="socials-item">
-                  <a class="socials-link link" href="">Twitter</a>
-                </li>
-                <li class="socials-item">
-                  <a class="socials-link link" href="">Facebook</a>
-                </li>
-                <li class="socials-item">
-                  <a class="socials-link link" href="">LinkedIn</a>
-                </li>
-              </ul>
+              <div class="team-member-group">
+                <h3 class="team-headline">John Smith</h3>
+                <p class="team-position" lang="en">Extreme Barber</p>
+                <ul class="socials list">
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">Instagram</a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">Twitter</a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">Facebook</a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="team-member">
+            <li class="team-member grid-item">
               <img
                 class="team-avatar"
                 src="./images/team/img2.jpg"
@@ -269,24 +278,26 @@
                 width="370"
                 height="346"
               />
-              <h3 class="team-headline">Michele Doe</h3>
-              <p class="team-position" lang="en">Extreme Barber</p>
-              <ul class="socials list">
-                <li class="socials-item">
-                  <a class="socials-link link" href="">Instagram</a>
-                </li>
-                <li class="socials-item">
-                  <a class="socials-link link" href="">Twitter</a>
-                </li>
-                <li class="socials-item">
-                  <a class="socials-link link" href="">Facebook</a>
-                </li>
-                <li class="socials-item">
-                  <a class="socials-link link" href="">LinkedIn</a>
-                </li>
-              </ul>
+              <div class="team-member-group">
+                <h3 class="team-headline">Michele Doe</h3>
+                <p class="team-position" lang="en">Extreme Barber</p>
+                <ul class="socials list">
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">Instagram</a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">Twitter</a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">Facebook</a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="team-member">
+            <li class="team-member grid-item">
               <img
                 class="team-avatar"
                 src="./images/team/img3.jpg"
@@ -294,22 +305,24 @@
                 width="370"
                 height="346"
               />
-              <h3 class="team-headline">Alan Black</h3>
-              <p class="team-position" lang="en">Extreme Barber</p>
-              <ul class="socials list">
-                <li class="socials-item">
-                  <a class="socials-link link" href="">Instagram</a>
-                </li>
-                <li class="socials-item">
-                  <a class="socials-link link" href="">Twitter</a>
-                </li>
-                <li class="socials-item">
-                  <a class="socials-link link" href="">Facebook</a>
-                </li>
-                <li class="socials-item">
-                  <a class="socials-link link" href="">LinkedIn</a>
-                </li>
-              </ul>
+              <div class="team-member-group">
+                <h3 class="team-headline">Alan Black</h3>
+                <p class="team-position" lang="en">Extreme Barber</p>
+                <ul class="socials list">
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">Instagram</a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">Twitter</a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">Facebook</a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -322,8 +335,13 @@
             На латинском языке “барба” означает “борода”
           </p>
           <h2 class="visually-hidden" aria-hidden="true">Галерея Барбершопа</h2>
-          <ul class="gallery-list list">
-            <li class="gallery-item">
+
+
+
+
+
+          <ul class="gallery-list list grid">
+            <li class="gallery-item grid-item">
               <img
                 class="gallery-img"
                 src="./images/gallery/gallery1.jpeg"
@@ -332,7 +350,7 @@
                 height="360"
               />
             </li>
-            <li class="gallery-item">
+            <li class="gallery-item grid-item">
               <img
                 class="gallery-img"
                 src="./images/gallery/gallery2.jpeg"
@@ -341,7 +359,7 @@
                 height="360"
               />
             </li>
-            <li class="gallery-item">
+            <li class="gallery-item grid-item">
               <img
                 class="gallery-img"
                 src="./images/gallery/gallery3.jpeg"
@@ -350,7 +368,7 @@
                 height="360"
               />
             </li>
-            <li class="gallery-item">
+            <li class="gallery-item grid-item">
               <img
                 class="gallery-img"
                 src="./images/gallery/gallery4.jpeg"
