@@ -52,21 +52,20 @@ p {
   padding-bottom: 55px;
 }
 
-.head-container{
+.head-container {
   display: flex;
-
 }
 
-.logo{
+.logo {
   margin-right: 228px;
 }
 
-.navigation-list{
+.navigation-list {
   display: flex;
   justify-content: center;
 }
 
-.navigation-item:not(:last-child){
+.navigation-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -74,14 +73,13 @@ p {
   margin-left: auto;
 }
 /* Hero section */
-.hero{
+.hero {
   padding-top: 0;
 }
 
 .container-hero {
   display: flex;
   justify-content: space-between;
-
 }
 
 .hero-group {
@@ -89,13 +87,13 @@ p {
 }
 
 .hero-title {
-margin-bottom: 40px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 64px;
-line-height: 1.25;
-color: #000000;
+  margin-bottom: 40px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.25;
+  color: #000000;
 }
 
 .hero-description {
@@ -115,75 +113,95 @@ color: #000000;
 
 /* ========================================================== */
 
+/* skills flex layout */
 
-
-.skills-title {
-}
-.skills-card-set {
+/* .skills-title {
+} */
+/* .skills-card-set {
   display: flex;
-}
+} */
+
+/* .skills-card:last-child {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row-reverse;
+} */
+
+/* .slills-card-sub-set {
+  display: flex;
+  margin-bottom: 30px;
+} */
+
+/* .skills-card-inner-set {
+  margin-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+/* .slills-card-sub-set .skills-card:first-child {
+  margin-right: 30px;
+} */
+
 .skills-card {
-  background: #F5F5F5;
+  background: #f5f5f5;
   border-radius: 10px;
   outline: 1px solid greenyellow;
   flex-basis: 426px;
   padding: 32px 18px;
 }
-.skills-card:last-child{
-  flex-grow: 1;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.slills-card-sub-set {
-  display: flex;
-  margin-bottom: 30px;
-}
 
 .skills-card-img {
   margin-bottom: 24px;
 }
+
 .skills-card-title {
   margin-bottom: 20px;
   font-style: normal;
-font-weight: 600;
-font-size: 30px;
-line-height: 45px;
-color: #263238;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  color: #263238;
 }
 .skills-card-text {
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 
-color: #8F95A5;
-margin-bottom: 30px;
+  color: #8f95a5;
+  margin-bottom: 30px;
 }
 .skills-card-button {
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 27px;
-/* identical to box height */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
 
-
-color: #FFFFFF;
-background-color: #263238;
-border-radius: 10px;
-padding: 16px 63px;
-cursor: pointer;
-
+  color: #ffffff;
+  background-color: #263238;
+  border-radius: 10px;
+  padding: 16px 63px;
+  cursor: pointer;
 }
-.skills-card-inner-set {
-  margin-left: 30px;
+
+/* skills gird layout */
+.skills-card-set {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.skills-card:first-child {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.skills-card:last-child {
   display: flex;
-  flex-wrap: wrap;
-
-}
-
-.slills-card-sub-set .skills-card:first-child {
-  margin-right: 30px;
+  flex-direction: row-reverse;
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
