@@ -1,0 +1,51 @@
+:root {
+  --main-font: "Poppins", sans-serif;
+
+  --main-txt-cl: #8f95a5;
+}
+
+.page {
+  font-family: var(--main-font);
+  font-size: 20px;
+  line-height: 1.8;
+
+  color: var(--main-txt-cl);
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.container {
+  width: 1378px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.header,
+.footer {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
