@@ -32,6 +32,7 @@ p {
 }
 
 .container {
+  outline: 1px solid tomato;
   width: 1378px;
   padding-left: 20px;
   padding-right: 20px;
@@ -48,4 +49,26 @@ p {
 .footer {
   padding-top: 55px;
   padding-bottom: 55px;
+}
+
+/* ----------Header Section----------- */
+
+.header-container {
+  display: flex;
+}
+
+.logo {
+  margin-right: 228px;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-button {
+  margin-left: auto;
 }
