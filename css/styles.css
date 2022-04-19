@@ -1,31 +1,31 @@
 :root {
-  /* Основные шрифты */
+  /* Основні шрифти */
   --main-font: "Open Sans", sans-serif;
   --secondary-font: "Raleway", sans-serif;
   --accent-cl: #ff6c00;
 
-  /* Светлая тема текста */
+  /* Светла тема тексту */
   --primary-txt--mode-light: #555555;
   --secondary-txt--mode-light: #303030;
   --main-txt--mode-light: #555555;
 
-  /* Темная тема текста*/
+  /* Темна тема тексту */
   --primary-txt--mode-dark: #ffffff;
   --secondary-txt--mode-dark: rgba(157, 164, 189, 0.6);
   --main-txt--mode-dark: #9da4bd;
 
-  /* Светлая тема фона*/
+  /* Светла тема фону */
   --primary-bg--mode-light: #ffffff;
   --secondary-bg--mode-light: #f7f7f7;
 
-  /* Темная тема фона*/
+  /* Темна тема фону */
   --primary-bg--mode-dark: #191c26;
   --secondary-bg--mode-dark: #111319;
 
-  /* Icons colors */
+  /* Кольори для іконок */
   --icon-cl: #303030;
 
-  /* Grid */
+  /* Сітка */
   --items: 1;
   --indent: 30px;
 }
@@ -61,7 +61,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 /* Grid */
@@ -214,6 +214,7 @@ font-weight: 600;
 .main-btn:focus {
   background-color: var(--accent-cl);
   border-color: transparent;
+
 }
 
 .public-link {
@@ -461,6 +462,9 @@ font-weight: 600;
 }
 
 .advantages-quantity {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   margin-bottom: 6px;
 
   font-weight: 700;
@@ -469,6 +473,19 @@ font-weight: 600;
   letter-spacing: 0.05em;
 
   color: var(--secondary-txt--mode-light);
+}
+
+.advantages-quantity::after {
+  content: "\002B";
+  margin-left: 2px;
+  margin-top: 7px;
+  width: 10px;
+  height: 10px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.37;
+  color: #ff6c00;
 }
 
 .advantages-descr {
@@ -482,7 +499,20 @@ font-weight: 600;
 
 /* Team */
 .team {
-  background-color: var(--secondary-bg--mode-light);
+  /* background-color: var(--secondary-bg--mode-light);
+  background-image: radial-gradient(circle, #191c26, #f7f7f7, #555555); */
+  background-image: linear-gradient(to bottom, #ffffff, #b8b8b8, #ffffff);
+  background-size: 100% 400%;
+  animation: bg-pan-top 5s both infinite alternate;
+}
+
+@keyframes bg-pan-top {
+  0% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
 }
 
 .team-list {
@@ -495,6 +525,10 @@ font-weight: 600;
 
 .team-member-group {
   padding: 30px 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  border-radius: 0 0 15px 15px;
+  box-shadow: 15px 15px 30px #cecece, -15px -15px 30px #f2f2f2;
 }
 
 .team-headline {
@@ -551,9 +585,30 @@ font-weight: 600;
   --items: 4;
 }
 
-/* .gallery-item {
-  width: 270px;
-} */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item::before {
+  content: attr(data-title);
+  position: absolute;
+  top: 30px;
+  left: -80px;
+  width: 100%;
+  /* height: 15px; */
+  padding: 10px;
+
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+
+  border: 1px solid #ff6c00;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  transform: rotate(-45deg);
+}
 
 /* Contacts */
 .contacts {
@@ -570,8 +625,8 @@ font-weight: 600;
 
 /**
 |--------------------------------------------------
-| селектор ссылки по атрибуту, который начинается
-| со слова "mailto:"
+| селектор для  посилання по атрибуту, який
+| починається зі слова "mailto:"
 |--------------------------------------------------
 */
 .contacts-link[href^="mailto:"] {
@@ -591,4 +646,12 @@ font-weight: 600;
 .footer {
   padding-top: 56px;
   padding-bottom: 56px;
+}
+
+
+/* Селектор вибору дочернього елемента і зміни його властивостей, коли батьківський елемент має стан ховеру/фокусу */
+
+.parent-element:hover .child-element {
+  /* change some properties */
+  color: red;
 }
