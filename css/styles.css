@@ -28,6 +28,10 @@
   /* Сітка */
   --items: 1;
   --indent: 30px;
+
+  /* Інші */
+  --fast: 300ms ease-in-out;
+  --slow: 500ms ease-in-out;
 }
 
 /* Reset css */
@@ -204,6 +208,7 @@ font-weight: 600;
 
 .main-btn-mode-light {
   color: var(--primary-txt--mode-light);
+  animation: vibrate-1 500ms linear infinite both;
 }
 
 .main-btn-mode-dark {
@@ -215,6 +220,32 @@ font-weight: 600;
   background-color: var(--accent-cl);
   border-color: transparent;
 
+  transition-property: color, background-color, opacity, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  transition: color var(--fast), background-color var(--slow);
+}
+
+@keyframes vibrate-1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 
 .public-link {
@@ -330,6 +361,22 @@ font-weight: 600;
   gap: 30px;
 }
 
+.about-item {
+  overflow: hidden;
+}
+
+.about-img {
+  transform: scale(1) translateY(0);
+  transform-origin: 50% 16%;
+
+  transition: transform 3s ease-out, transform-origin 1s ease-out;
+}
+
+.about-item:hover .about-img {
+  transform: scale(1.25) translateY(-15px);
+  transform-origin: top;
+}
+
 .about-right-side {
   width: 500px;
   margin-left: 64px;
@@ -378,6 +425,8 @@ font-weight: 600;
     #171a24 0%,
     rgba(23, 26, 36, 0.2) 100%
   );
+
+  animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 .price-item:nth-child(even) {
   background-image: linear-gradient(
@@ -385,6 +434,17 @@ font-weight: 600;
     #090b13 0%,
     rgba(9, 11, 19, 0.2) 100%
   );
+
+  animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+@keyframes rotate-hor-center {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(-360deg);
+  }
 }
 
 /* .price-inner-list {
@@ -647,7 +707,6 @@ font-weight: 600;
   padding-top: 56px;
   padding-bottom: 56px;
 }
-
 
 /* Селектор вибору дочернього елемента і зміни його властивостей, коли батьківський елемент має стан ховеру/фокусу */
 
