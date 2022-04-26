@@ -1,0 +1,19 @@
+<svg
+  aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <symbol
+      id="check"
+      viewBox="0 0 32 32"
+    >
+      <path d="M12 21.56 6.44 16l-1.893 1.88L12 25.333l16-16-1.88-1.88L12 21.56z" />
+    </symbol>
+    <symbol
+      id="menu_40px"
+      viewBox="0 0 32 32"
+    >
+      <path d="M6.4 11.733V9.6h19.2v2.133H6.4zm0 5.334h19.2v-2.133H6.4v2.133zm0 5.333h19.2v-2.133H6.4V22.4z" />
+    </symbol>
+  </defs>
+</svg>
