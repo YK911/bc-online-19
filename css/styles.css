@@ -4,7 +4,7 @@
   --secondary-font: "Raleway", sans-serif;
   --accent-cl: #ff6c00;
 
-  /* Светла тема тексту */
+  /* Світла тема тексту */
   --primary-txt--mode-light: #555555;
   --secondary-txt--mode-light: #303030;
   --main-txt--mode-light: #555555;
@@ -14,7 +14,7 @@
   --secondary-txt--mode-dark: rgba(157, 164, 189, 0.6);
   --main-txt--mode-dark: #9da4bd;
 
-  /* Светла тема фону */
+  /* Світла тема фону */
   --primary-bg--mode-light: #ffffff;
   --secondary-bg--mode-light: #f7f7f7;
 
