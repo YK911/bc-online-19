@@ -222,6 +222,7 @@
 }
 /*  toggler */
 .toggler {
+  position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -236,6 +237,7 @@
   border: 1px solid #cccccc;
   border-radius: 32px;
   transition: background-color 400ms ease;
+  cursor: pointer;
 }
 .toggler-circle::before {
   content: "";
@@ -261,8 +263,8 @@
   background-color: #ffffff;
   border-color: transparent;
 }
-
-.toggle-on {
+/*  toggleк var 1 */
+/* .toggle-on {
   color: #ccc;
   transition: color 400ms ease;
 }
@@ -278,4 +280,28 @@
 
 .toggler-input:checked ~ .toggle-off {
   color: #ccc;
+} */
+
+/*  toggleк var 2 */
+.toggle-on,
+.toggle-off {
+  position: absolute;
+  left: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: top;
+  transition: opacity 400ms ease, transform 400ms ease;
+  cursor: pointer;
+}
+.toggle-on {
+  opacity: 0;
+  transform: scale(0.2) translateY(-50%);
+}
+.toggler-input:checked ~ .toggle-on {
+  opacity: 1;
+  transform: scale(1) translateY(-50%);
+}
+.toggler-input:checked ~ .toggle-off {
+  opacity: 0;
+  transform: scale(0.2) translateY(-50%);
 }
