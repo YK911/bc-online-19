@@ -220,3 +220,62 @@
   filter: grayscale(0.8);
   cursor: not-allowed;
 }
+/*  toggler */
+.toggler {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.toggler-circle {
+  margin: 0 10px;
+  position: relative;
+  display: block;
+  width: 49px;
+  height: 24px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 32px;
+  transition: background-color 400ms ease;
+}
+.toggler-circle::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 18px;
+  right: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f4f4f4;
+  border: 1px solid #cccccc;
+  border-radius: 32px;
+  transition: transform 400ms ease, border-color 400ms ease,
+    background-color 400ms ease;
+}
+
+.toggler-input:checked ~ .toggler-circle {
+  background-color: blueviolet;
+}
+.toggler-input:checked ~ .toggler-circle::before {
+  transform: translateX(-123%) translateY(-50%);
+  background-color: #ffffff;
+  border-color: transparent;
+}
+
+.toggle-on {
+  color: #ccc;
+  transition: color 400ms ease;
+}
+
+.toggle-off {
+  color: blueviolet;
+  transition: color 400ms ease;
+}
+
+.toggler-input:checked ~ .toggle-on {
+  color: blueviolet;
+}
+
+.toggler-input:checked ~ .toggle-off {
+  color: #ccc;
+}
