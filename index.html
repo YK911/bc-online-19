@@ -65,16 +65,18 @@
       <!-- Hero section -->
       <section class="section hero">
         <div class="container hero-section">
-          <ul class="hero-socials hero-list list">
-            <li class="hero-item">
-              <a class="public-link link" href="" lang="en">Instagram</a>
-            </li>
-            <li class="hero-item">
-              <a class="public-link link" href="" lang="en">Youtube</a>
-            </li>
-          </ul>
+          <div class="hero-left-side">
+            <ul class="hero-socials hero-list list">
+              <li class="hero-item">
+                <a class="public-link link" href="" lang="en">Instagram</a>
+              </li>
+              <li class="hero-item">
+                <a class="public-link link" href="" lang="en">Youtube</a>
+              </li>
+            </ul>
+          </div>
 
-          <div class="hero-group">
+          <div class="hero-right-side">
             <p class="uppertitle uppertitle-mode-dark" lang="en">
               A hair salon for men in Kyiv
             </p>
@@ -500,47 +502,88 @@
 
       <!-- Contacts section -->
       <section class="section contacts">
-        <div class="container">
-          <h2 class="title title-mode-dark">Контакты</h2>
-          <ul class="contacts-list list">
-            <li class="contacts-item">
-              <address class="contacts-address">
-                <svg class="contacts-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#map-pin"></use>
-                </svg>
-                ул. Васильковая, 7А Киев, 08132
-              </address>
-            </li>
-            <li class="contacts-item">
-              <a class="contacts-link link" href="tel:+380441111111">
-                <svg class="contacts-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#phone"></use>
-                </svg>
-                +38 044 111 11 11</a
-              >
-            </li>
-            <li class="contacts-item">
-              <a class="contacts-link link" href="mailto:barbershop@email.com">
-                <svg class="contacts-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#mail"></use>
-                </svg>
-                barbershop@email.com</a
-              >
-            </li>
-          </ul>
+        <div class="container contacts-container">
+          <article class="contacts-form-block">
+            <h2 class="title title-mode-dark">Онлайн-запись</h2>
+            <form class="contacts-form">
+              <div class="contacts-form-group">
+                <label class="contacts-form-tag">
+                  Имя*
+                  <input
+                    class="contacts-form-input"
+                    name="user-name"
+                    type="text"
+                    required
+                  />
+                </label>
+                <label class="contacts-form-tag">
+                  Телефон*
+                  <input
+                    class="contacts-form-input"
+                    name="user-phone"
+                    type="tel"
+                    required
+                  />
+                </label>
+                <label class="contacts-form-tag">
+                  сообщение
+                  <textarea
+                    class="contacts-form-message"
+                    name="user-message"
+                    rows="5"
+                  ></textarea>
+                </label>
+              </div>
+              <button class="main-btn main-btn-mode-dark" type="submit">
+                отправить
+              </button>
+            </form>
+          </article>
+          <article class="contacts-info-block">
+            <h2 class="title title-mode-dark">Контакты</h2>
+            <ul class="contacts-list list">
+              <li class="contacts-item">
+                <address class="contacts-address">
+                  <svg class="contacts-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#map-pin"></use>
+                  </svg>
+                  ул. Васильковая, 7А Киев,&nbsp;08132
+                </address>
+              </li>
+              <li class="contacts-item">
+                <a class="contacts-link link" href="tel:+380441111111">
+                  <svg class="contacts-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#phone"></use>
+                  </svg>
+                  +38 044 111 11 11</a
+                >
+              </li>
+              <li class="contacts-item">
+                <a
+                  class="contacts-link link"
+                  href="mailto:barbershop@email.com"
+                >
+                  <svg class="contacts-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#mail"></use>
+                  </svg>
+                  barbershop@email.com</a
+                >
+              </li>
+            </ul>
 
-          <h3 class="uppertitle uppertitle-mode-dark">время работы</h3>
-          <p class="contacts-schedule">
-            Ежедневно с <time datetime="9:00">9:00</time> до
-            <time datetime="22:00">22:00</time>
-          </p>
+            <h3 class="uppertitle uppertitle-mode-dark">время работы</h3>
+            <p class="contacts-schedule">
+              Ежедневно с <time datetime="9:00">9:00</time> до
+              <time datetime="22:00">22:00</time>
+            </p>
+          </article>
         </div>
       </section>
     </main>
 
     <!-- Footer section -->
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-container">
         <p class="footer-copyright">&#169; Copyright 2020</p>
         <ul class="footer-list list">
           <li class="footer-item">
