@@ -264,9 +264,21 @@ font-weight: 600;
 
 /* Header */
 .header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+
   padding-top: 32px;
   padding-bottom: 32px;
   background-color: var(--primary-bg--mode-dark);
+
+  background-image: linear-gradient(
+    to right,
+    #ffffff 155px,
+    var(--primary-bg--mode-dark) 155px
+  );
 }
 
 .header-container,
@@ -313,6 +325,7 @@ font-weight: 600;
 .header-phone {
   flex-shrink: 0;
   text-transform: uppercase;
+  margin-right: 40px;
 }
 .header-phone:hover,
 .header-phone:focus {
@@ -321,10 +334,34 @@ font-weight: 600;
 
 /* Hero */
 .hero {
+  padding-top: 184px;
+  padding-bottom: 206px;
   background-color: var(--primary-bg--mode-dark);
+  background-image: linear-gradient(
+    to right,
+    #ffffff 155px,
+    var(--primary-bg--mode-dark) 155px
+  );
+}
+
+.hero-section {
+  position: relative;
+  display: flex;
+}
+
+.hero-socials {
+  display: flex;
+  flex-basis: 115px;
+  transform: rotate(-90deg);
+}
+
+.hero-group {
+  width: 480px;
 }
 
 .hero-title {
+  margin-bottom: 20px;
+
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 72px;
@@ -334,7 +371,25 @@ font-weight: 600;
   color: var(--primary-txt--mode-dark);
 }
 
+.slider-btn {
+  position: absolute;
+  bottom: -142px;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-item:not(:last-child) {
+  margin-right: 26px;
+}
+
 .hero-btn {
+  min-width: 60px;
+  padding: 0;
+  padding-bottom: 8px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -342,11 +397,21 @@ font-weight: 600;
   letter-spacing: 0.1em;
   color: var(--primary-txt--mode-dark);
   background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
   cursor: pointer;
+}
+
+.hero-item:first-child .hero-btn {
+  text-align: left;
+}
+.hero-item:last-child .hero-btn {
+  text-align: right;
 }
 
 .hero-btn-disable {
   color: rgba(157, 164, 189, 0.6);
+  border-bottom: 1px solid rgba(157, 164, 189, 0.6);
 }
 
 /* About us */
@@ -672,11 +737,19 @@ font-weight: 600;
 
 /* Contacts */
 .contacts {
+  color: #9da4bd;
   background-color: var(--secondary-bg--mode-dark);
 }
 
+/* .contacts-list {
+} */
+
 .contacts-address {
   font-style: normal;
+}
+
+.contacts-icon {
+  fill: currentColor;
 }
 
 .contacts-link {
