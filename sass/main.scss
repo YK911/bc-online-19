@@ -1,0 +1,31 @@
+// Utils styles
+@import "./utils/vars";
+@import "./vendors/visually-hidden.scss";
+
+// Base styles
+@import "./base/reset";
+@import "./base/base";
+@import "./base/grid";
+
+// Components styles
+@import "./components/btn";
+@import "./components/socials";
+@import "./components/public-link";
+@import "./components/slider";
+@import "./components/titles/uppertitle";
+@import "./components/titles/title";
+@import "./components/titles/subtitle";
+
+// Layouts styles
+@import "./layouts/header";
+@import "./layouts/section";
+@import "./layouts/footer";
+
+// Section components
+@import "./components/hero";
+@import "./components/about";
+@import "./components/advantages";
+@import "./components/price";
+@import "./components/team";
+@import "./components/gallery";
+@import "./components/contacts";

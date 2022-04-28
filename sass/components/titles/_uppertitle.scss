@@ -1,0 +1,36 @@
+.uppertitle {
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.uppertitle::before {
+  content: "";
+  margin-right: 20px;
+
+  width: 60px;
+  height: 1px;
+}
+
+.uppertitle--mode-light {
+  color: var(--secondary-txt--mode-light);
+}
+
+.uppertitle--mode-light::before {
+  background-color: var(--secondary-txt--mode-light);
+}
+
+.uppertitle--mode-dark {
+  color: var(--secondary-txt--mode-dark);
+}
+
+.uppertitle--mode-dark::before {
+  background-color: var(--secondary-txt--mode-dark);
+}

@@ -1,0 +1,28 @@
+.title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  color: var(--secondary-txt--mode-light);
+}
+
+.title--mode-light {
+  margin-bottom: 20px;
+  color: var(--secondary-txt--mode-light);
+}
+
+.title--mode-dark {
+  margin-bottom: 44px;
+  color: var(--primary-txt--mode-dark);
+}
+
+/* .description {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+} */

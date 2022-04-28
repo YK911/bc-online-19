@@ -1,0 +1,43 @@
+.slider__list {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider__item:not(:last-child) {
+  margin-right: 26px;
+}
+
+.slider__item:first-child .slider__btn {
+  text-align: left;
+}
+
+.slider__item:last-child .slider__btn {
+  text-align: right;
+}
+
+.slider__btn {
+  min-width: 60px;
+  padding: 0;
+  padding-bottom: 8px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.1em;
+  color: var(--primary-txt--mode-dark);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.slider__btn--disable {
+  color: rgba(157, 164, 189, 0.6);
+  border-bottom: 1px solid rgba(157, 164, 189, 0.6);
+}

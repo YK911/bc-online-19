@@ -1,0 +1,101 @@
+/* -= Contacts section =- */
+.contacts {
+  color: #9da4bd;
+  background-color: var(--secondary-bg--mode-dark);
+  background-image: url(../images/contacts/bg-contacts.png);
+  background-repeat: no-repeat;
+  background-position: top calc(50%) left calc(50% + 322px);
+}
+
+.contacts-container {
+  display: flex;
+}
+
+.contacts-form-block,
+.contacts-info-block {
+  flex-basis: 50%;
+}
+
+.contacts-form-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts-form-tag {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+
+  margin-bottom: 44px;
+}
+
+.contacts-form-tag:first-of-type {
+  margin-right: 40px;
+}
+.contacts-form-tag:nth-of-type(-n + 2) {
+  flex-basis: calc(50% - 40px);
+}
+
+.contacts-form-input,
+.contacts-form-message {
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 1px solid var(--main-txt--mode-dark);
+}
+
+.contacts-form-message {
+  width: 560px;
+  height: 60px;
+  resize: none;
+}
+
+.contacts-info-block {
+  padding-left: 100px;
+}
+
+.contacts-list {
+  margin-bottom: 70px;
+  width: 270px;
+}
+
+.contacts-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts-address {
+  display: flex;
+  font-style: normal;
+}
+
+.contacts-link {
+  display: flex;
+  color: currentColor;
+}
+
+.contacts-icon {
+  margin-right: 16px;
+  flex-shrink: 0;
+
+  fill: currentColor;
+  transform: translateY(4px);
+}
+
+/**
+|--------------------------------------------------
+| селектор для  посилання по атрибуту, який
+| починається зі слова "mailto:"
+|--------------------------------------------------
+*/
+.contacts-link[href^="mailto:"] {
+  text-decoration: underline;
+}
+
+.contacts .uppertitle--mode-dark {
+  /**
+|--------------------------------------------------
+| перевизначення змінної для верхнього заголовка
+| лише усередині секції contacts
+|--------------------------------------------------
+*/
+  --secondary-txt--mode-dark: #ffffff;
+}

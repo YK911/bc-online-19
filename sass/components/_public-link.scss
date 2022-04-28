@@ -1,0 +1,35 @@
+.public-socials {
+  display: flex;
+  align-items: center;
+}
+
+.public-socials::before {
+  content: "";
+
+  display: block;
+  width: 60px;
+  height: 1px;
+  margin-right: 40px;
+
+  flex-shrink: 0;
+  background-color: var(--secondary-txt--mode-light);
+}
+
+.public-socials__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.public-socials__link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--secondary-txt--mode-light);
+  transition: color 400ms;
+}
+
+.public-socials__link:hover,
+.public-socials__link:focus {
+  color: var(--accent-cl);
+}

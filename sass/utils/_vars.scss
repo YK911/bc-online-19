@@ -1,0 +1,37 @@
+:root {
+  /* Основні шрифти */
+  --main-font: "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+
+  /* Кольори */
+  --accent-cl: #ff6c00;
+
+  /* Світла тема тексту */
+  --primary-txt--mode-light: #555555;
+  --secondary-txt--mode-light: #303030;
+  --main-txt--mode-light: #555555;
+
+  /* Темна тема тексту */
+  --primary-txt--mode-dark: #ffffff;
+  --secondary-txt--mode-dark: rgba(157, 164, 189, 0.6);
+  --main-txt--mode-dark: #9da4bd;
+
+  /* Світла тема фону */
+  --primary-bg--mode-light: #ffffff;
+  --secondary-bg--mode-light: #f7f7f7;
+
+  /* Темна тема фону */
+  --primary-bg--mode-dark: #191c26;
+  --secondary-bg--mode-dark: #111319;
+
+  /* Кольори для іконок */
+  --icon-cl: #303030;
+
+  /* Сітка */
+  --items: 1;
+  --indent: 30px;
+
+  /* Інші */
+  --fast: 300ms ease-in-out;
+  --slow: 500ms ease-in-out;
+}
