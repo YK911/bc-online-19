@@ -1,20 +1,19 @@
 // Utils styles
 @import "./utils/vars";
+@import "./utils/placeholders";
+@import "./utils/mixins";
 @import "./vendors/visually-hidden.scss";
+@import "./vendors/modern-normalize";
 
 // Base styles
-@import "./base/reset";
-@import "./base/base";
-@import "./base/grid";
+@import "./base/module";
 
 // Components styles
 @import "./components/btn";
 @import "./components/socials";
 @import "./components/public-link";
 @import "./components/slider";
-@import "./components/titles/uppertitle";
-@import "./components/titles/title";
-@import "./components/titles/subtitle";
+@import "./components/titles/module";
 
 // Layouts styles
 @import "./layouts/header";

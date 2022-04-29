@@ -1,42 +1,30 @@
 .main-btn {
-  width: 100%;
-  max-width: 160px;
-  min-width: 100px;
-  min-height: 40px;
-  padding: 11px 12px;
+  // use placeholder
+  // @extend %main-btn;
 
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
+  // use mixin
+  @include btn(large);
 
-  background-color: transparent;
-  border: 1px solid var(--accent-cl);
-  border-radius: 25px;
-  cursor: pointer;
-}
+  &:hover,
+  &:focus {
+    background-color: var(--accent-cl);
+    border-color: transparent;
 
-.main-btn--mode-light {
-  color: var(--primary-txt--mode-light);
-  /* animation: vibrate-1 500ms linear infinite both; */
-}
+    transition-property: color, background-color, opacity, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 
-.main-btn--mode-dark {
-  color: var(--primary-txt--mode-dark);
-}
+    transition: color var(--fast), background-color var(--slow);
+  }
 
-.main-btn:hover,
-.main-btn:focus {
-  background-color: var(--accent-cl);
-  border-color: transparent;
+  &--mode-light {
+    color: var(--primary-txt--mode-light);
+    /* animation: vibrate-1 500ms linear infinite both; */
+  }
 
-  transition-property: color, background-color, opacity, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-
-  transition: color var(--fast), background-color var(--slow);
+  &--mode-dark {
+    color: var(--primary-txt--mode-dark);
+  }
 }
 
 @keyframes vibrate-1 {
