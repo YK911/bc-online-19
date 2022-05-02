@@ -1,13 +1,27 @@
 /* -= Footer section =- */
 .footer {
-  padding-top: 56px;
-  padding-bottom: 56px;
+  padding-top: 44px;
+  padding-bottom: 44px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
 }
+
 .footer-container {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .footer-list {
-  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
 }
