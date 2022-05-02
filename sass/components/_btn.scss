@@ -3,7 +3,7 @@
   // @extend %main-btn;
 
   // use mixin
-  @include btn(large);
+  @include btn(small);
 
   &:hover,
   &:focus {

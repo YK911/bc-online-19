@@ -5,10 +5,17 @@
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
   z-index: 10;
+
+  background-color: #191c26;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .header__container,
@@ -17,8 +24,21 @@
   align-items: center;
 }
 
+.header__logo {
+  display: block;
+  fill: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    fill: #303030;
+  }
+}
+
 .nav {
   margin-left: 71px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .nav__item {
@@ -51,6 +71,10 @@
   align-items: center;
 
   margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .header__phone {

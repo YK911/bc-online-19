@@ -53,13 +53,70 @@
             онлайн-запись
           </button>
         </div>
+        <button
+          class="menu-button"
+          type="button"
+          data-menu-button
+          aria-expanded="false"
+        >
+          <svg class="menu-icon" width="40" height="40">
+            <use
+              class="menu-icon-open"
+              href="./images/sprite.svg#icon-menu"
+            ></use>
+            <use
+              class="menu-icon-close"
+              href="./images/sprite.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-overlay" data-menu>
+          <div class="menu">
+            <nav class="menu__nav">
+              <ul class="menu__nav-list list">
+                <li class="menu__nav-item">
+                  <a class="menu__nav-link link" href="">О нас</a>
+                </li>
+                <li class="menu__nav-item">
+                  <a class="menu__nav-link link" href="">Услуги и цены</a>
+                </li>
+                <li class="menu__nav-item">
+                  <a class="menu__nav-link link" href="">Мастера</a>
+                </li>
+                <li class="menu__nav-item">
+                  <a class="menu__nav-link link" href="">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="menu__group">
+              <a class="menu__phone link" href="tel:+380441111111"
+                >+38 044 111 11 11</a
+              >
+              <button class="main-btn main-btn--mode-light" type="button">
+                онлайн-запись
+              </button>
+            </div>
+            <ul class="menu__socials public-socials list">
+              <li class="public-socials__item">
+                <a class="public-socials__link link" href="" lang="en"
+                  >Instagram</a
+                >
+              </li>
+              <li class="public-socials__item">
+                <a class="public-socials__link link" href="" lang="en"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
     <!-- Uniaue content -->
     <main>
       <!-- Hero section -->
-      <section class="section hero">
+      <!-- <section class="section hero">
         <div class="container hero__container">
           <div class="hero__left">
             <ul class="hero__socials public-socials list">
@@ -100,10 +157,10 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- About us section -->
-      <section class="section about">
+      <!-- <section class="section about">
         <div class="container about-container">
           <ul class="about-list list">
             <li class="about-item">
@@ -146,10 +203,10 @@
             </button>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Price section -->
-      <section class="section price">
+      <!-- <section class="section price">
         <div class="container">
           <p class="uppertitle uppertitle--mode-dark">
             Проведи время в компании лучших мастеров
@@ -203,10 +260,10 @@
             онлайн-запись
           </button>
         </div>
-      </section>
+      </section> -->
 
       <!-- Advantages section -->
-      <section class="section advantages">
+      <!-- <section class="section advantages">
         <div class="container advantages-container">
           <ul class="advantages-list list">
             <li class="advantages-item">
@@ -239,10 +296,10 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Team section -->
-      <section class="section team">
+      <!-- <section class="section team">
         <div class="container">
           <p class="uppertitle uppertitle--mode-light">
             для настоящих ценителей атмосферы
@@ -452,10 +509,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Gallery section  -->
-      <section class="section gallery">
+      <!-- <section class="section gallery">
         <div class="container">
           <p class="uppertitle uppertitle--mode-light">
             На латинском языке “барба” означает “борода”
@@ -500,10 +557,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Contacts section -->
-      <section class="section contacts">
+      <!-- <section class="section contacts">
         <div class="container contacts-container">
           <article class="contacts-form-block">
             <h2 class="title title--mode-dark">Онлайн-запись</h2>
@@ -580,11 +637,11 @@
             </p>
           </article>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Footer section -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <p class="footer-copyright">&#169; Copyright 2020</p>
         <ul class="footer-list public-socials list">
@@ -596,6 +653,8 @@
           </li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

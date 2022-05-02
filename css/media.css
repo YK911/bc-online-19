@@ -1,0 +1,46 @@
+/*
+
+all - всі пристрої (працює за змовчуванням)
+
+screen - всі пристрої, які не потрапляють в категорію print
+
+print - принтери та пристрої, які виводять сторінку для друку
+
+
+  media feature:
+* min-width -- від значення і далі  (min-width: 300px) - від 300рх до бескінечності
+* max-width -- до значення          (max-width: 300px) - від 0рх до 300рх
+
+        * 0 * =============> *300* ===============> *infinity*
+
+
+  Оператори комбінування медіа-правил
+
+  and - і (99%)
+
+  , or - або
+
+  not - заперечення
+
+  only - тільки за певних умов
+
+*/
+
+.page {
+  background-color: rgb(72, 72, 72);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 72px;
+  }
+}
