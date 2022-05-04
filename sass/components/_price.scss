@@ -5,14 +5,101 @@
   margin-right: auto;
   background-color: var(--secondary-bg--mode-dark);
 
-  background-image: url(../images/price/bg-price.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  /*
+  ========================================
+  | Медіа-правила із застосуванням міксіну
+  ========================================
+  */
+
+  // For mobile backgroud + 2x
+  background-image: url(../images/price/bg-price_sm.png);
+  // + *.webp
+  background-image: -webkit-image-set(url(../images/price/bg-price_sm.webp) 1x);
+
+  @include mq(retina) {
+    background-image: url(../images/price/bg-price@2x_sm.png);
+    // + *.webp
+    background-image: -webkit-image-set(
+      url(../images/price/bg-price@2x_sm.webp) 2x
+    );
+  }
+
+  // For tablet backgroud + 2x
+  @include mq(tablet) {
+    background-image: url(../images/price/bg-price_md.png);
+    // + *.webp
+    background-image: -webkit-image-set(
+      url(../images/price/bg-price_md.webp) 1x
+    );
+
+    @include mq(retina) {
+      background-image: url(../images/price/bg-price@2x_md.png);
+      // + *.webp
+      background-image: -webkit-image-set(
+        url(../images/price/bg-price@2x_md.webp) 2x
+      );
+    }
+  }
+
+  // For desktop backgroud + 2x
+  @include mq(desktop) {
+    background-image: url(../images/price/bg-price_lg.png);
+    // + *.webp
+    background-image: -webkit-image-set(
+      url(../images/price/bg-price_lg.webp) 1x
+    );
+
+    @include mq(retina) {
+      background-image: url(../images/price/bg-price@2x_lg.png);
+      // + *.webp
+      background-image: -webkit-image-set(
+        url(../images/price/bg-price@2x_lg.webp) 2x
+      );
+    }
+  }
+
+  /*
+  ========================================
+  | Медіа-правила без застосування міксіну
+  ========================================
+  */
+  // For tablet backgroud + 2x
+  // @media screen and (max-width: 767px) {
+  //   background-image: url(../images/price/bg-price_sm.png);
+
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url(../images/price/bg-price@2x_sm.png);
+  //   }
+  // }
+  // @media screen and (min-width: 768px) {
+  //   background-image: url(../images/price/bg-price_md.png);
+
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url(../images/price/bg-price@2x_md.png);
+  //   }
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   background-image: url(../images/price/bg-price_lg.png);
+
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url(../images/price/bg-price@2x_lg.png);
+  //   }
+  // }
 }
 
 .price-list {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 

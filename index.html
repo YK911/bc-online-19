@@ -18,7 +18,7 @@
   </head>
   <body class="page">
     <!-- Header section -->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header__container">
         <a
           class="header__link"
@@ -111,7 +111,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </header> -->
 
     <!-- Uniaue content -->
     <main>
@@ -206,7 +206,7 @@
       </section> -->
 
       <!-- Price section -->
-      <!-- <section class="section price">
+      <section class="section price">
         <div class="container">
           <p class="uppertitle uppertitle--mode-dark">
             Проведи время в компании лучших мастеров
@@ -260,7 +260,7 @@
             онлайн-запись
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!-- Advantages section -->
       <!-- <section class="section advantages">
@@ -519,15 +519,95 @@
           </p>
           <h2 class="visually-hidden" aria-hidden="true">Галерея Барбершопа</h2>
           <ul class="gallery-list list grid">
-            <li class="gallery-item grid-item" data-title="sale">
-              <img
+            <li class="gallery-item grid-item" data-title="sale"> -->
+      <!-- <img
                 class="gallery-img"
-                src="./images/gallery/gallery1.jpeg"
+                srcset="
+                  ./images/gallery/gallery1_lg.jpeg   1x,
+                  ./images/gallery/gallery1@2x_lg.jpg 2x
+                "
+                src="./images/gallery/gallery1_lg.jpeg"
                 alt=""
                 width="270"
                 height="360"
-              />
-            </li>
+              /> -->
+
+      <!-- 960px - підраховане браузером значення ширини екрану -->
+      <!-- <img
+                class="gallery-img"
+                srcset="
+                  ./images/gallery-w/img-480.jpg   480w,
+                  ./images/gallery-w/img-768.jpg   768w,
+                  ./images/gallery-w/img-1200.jpg 1200w
+                "
+                sizes="(min-width: 768px) 768px, (min-width: 480px) 480px, 100vw"
+                src="./images/gallery-w/img-480.jpg"
+                alt="gallery"
+                width="418"
+                height="360"
+              /> -->
+      <!-- <picture>
+                <source
+                  srcset="
+                    ./images/gallery/gallery1_lg.webp    1x,
+                    ./images/gallery/gallery1@2x_lg.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/gallery1_lg.jpg    1x,
+                    ./images/gallery/gallery1@2x_lg.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+
+                <source
+                  srcset="
+                    ./images/gallery/gallery1_md.webp    1x,
+                    ./images/gallery/gallery1@2x_md.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/gallery1_md.jpg    1x,
+                    ./images/gallery/gallery1@2x_md.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+
+                <source
+                  srcset="
+                    ./images/gallery/gallery1_sm.webp    1x,
+                    ./images/gallery/gallery1@2x_sm.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/gallery1_sm.jpg    1x,
+                    ./images/gallery/gallery1@2x_sm.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+
+                <img
+                  class="gallery-img"
+                  src="./images/gallery/gallery1_sm.jpg"
+                  alt=""
+                  width="418"
+                  height="360"
+                  loading="lazy"
+                />
+              </picture> -->
+      <!-- </li>
             <li class="gallery-item grid-item" data-title="sold out">
               <img
                 class="gallery-img"
@@ -641,7 +721,7 @@
     </main>
 
     <!-- Footer section -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <p class="footer-copyright">&#169; Copyright 2020</p>
         <ul class="footer-list public-socials list">
@@ -653,7 +733,7 @@
           </li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
 
     <script src="./js/mobile-menu.js"></script>
   </body>
