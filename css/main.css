@@ -309,6 +309,7 @@ summary {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--main-txt--mode-light);
+  overflow-x: hidden;
 }
 
 /* Grid */
@@ -578,10 +579,16 @@ img {
 .title {
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 33px;
   letter-spacing: 0.05em;
   color: var(--secondary-txt--mode-light);
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 42px;
+  }
 }
 
 .title--mode-light {
@@ -603,9 +610,15 @@ img {
   text-transform: uppercase;
 } */
 .subtitle {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.67;
   letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 1200px) {
+  .subtitle {
+    font-size: 18px;
+  }
 }
 
 .subtitle--mode-light {

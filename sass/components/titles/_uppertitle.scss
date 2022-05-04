@@ -9,28 +9,28 @@
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-}
 
-.uppertitle::before {
-  content: "";
-  margin-right: 20px;
+  &::before {
+    content: "";
+    margin-right: 20px;
 
-  width: 60px;
-  height: 1px;
+    width: 60px;
+    height: 1px;
+  }
 }
 
 .uppertitle--mode-light {
   color: var(--secondary-txt--mode-light);
-}
 
-.uppertitle--mode-light::before {
-  background-color: var(--secondary-txt--mode-light);
+  &::before {
+    background-color: var(--secondary-txt--mode-light);
+  }
 }
 
 .uppertitle--mode-dark {
   color: var(--secondary-txt--mode-dark);
-}
 
-.uppertitle--mode-dark::before {
-  background-color: var(--secondary-txt--mode-dark);
+  &::before {
+    background-color: var(--secondary-txt--mode-dark);
+  }
 }

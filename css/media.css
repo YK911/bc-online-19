@@ -26,7 +26,7 @@ print - принтери та пристрої, які виводять стор
 
 */
 
-.page {
+/* .page {
   background-color: rgb(72, 72, 72);
 }
 
@@ -43,4 +43,80 @@ print - принтери та пристрої, які виводять стор
   .title {
     font-size: 72px;
   }
+} */
+
+/* Base-mobile 320px + */
+.page {
+  background-color: blueviolet;
+}
+
+/* Mobile 480 + */
+@media screen and (min-width: 480px) {
+  .page {
+    background-color: teal;
+  }
+}
+
+/* Tablet 768px + */
+@media screen and (min-width: 768px) {
+  .page {
+    background-color: aquamarine;
+  }
+}
+
+/* Desktop 1200px + */
+@media screen and (min-width: 1200px) {
+  .page {
+    background-color: tomato;
+  }
+}
+
+/* Mobile only 0 - 767px */
+@media screen and (max-width: 767px) {
+  .page {
+    background-color: goldenrod;
+  }
+}
+
+/* Tablet only 768px - 1199px */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page {
+    background-color: white;
+  }
+}
+
+/* Not desktop 0 - 1199px */
+@media screen and (max-width: 1199px) {
+  .page {
+    background-color: gold;
+  }
+}
+
+/* Mobile & desktop 0 - 767px & 1200px + */
+@media screen and (max-width: 767px), (min-width: 1200px) {
+  .page {
+    background-color: blueviolet;
+  }
+}
+
+/* For printers */
+@media print {
+  ul {
+    display: none;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+}
+
+/* Портретна орієнтація */
+@media (orientation: portrait) {
+}
+/* Альбомна орієнтація */
+@media (orientation: landscape) {
 }
