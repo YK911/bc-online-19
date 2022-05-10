@@ -1,0 +1,49 @@
+.main-btn {
+  // use placeholder
+  // @extend %main-btn;
+
+  // use mixin
+  @include btn(small);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-cl);
+    border-color: transparent;
+
+    transition-property: color, background-color, opacity, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    transition: color var(--fast), background-color var(--slow);
+  }
+
+  &--mode-light {
+    color: var(--primary-txt--mode-light);
+    /* animation: vibrate-1 500ms linear infinite both; */
+  }
+
+  &--mode-dark {
+    color: var(--primary-txt--mode-dark);
+  }
+}
+
+@keyframes vibrate-1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}

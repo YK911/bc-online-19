@@ -1,0 +1,19 @@
+%main-btn {
+  width: 100%;
+  max-width: 160px;
+  min-width: 100px;
+  min-height: 40px;
+  padding: 11px 12px;
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 1px solid var(--accent-cl);
+  border-radius: 25px;
+  cursor: pointer;
+}

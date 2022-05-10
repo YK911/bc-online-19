@@ -12,96 +12,155 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-    <!-- Normalize -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
-    />
+
     <!-- Custom styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="page">
     <!-- Header section -->
-    <header class="header">
-      <div class="container header-container">
+    <!-- <header class="header">
+      <div class="container header__container">
         <a
-          class="header-link"
+          class="header__link"
           href="./index.html"
           aria-label="Логотип BarberShop"
         >
-          <svg class="header-logo" width="68" height="55" role="img">
+          <svg class="header__logo" width="68" height="55" role="img">
             <use href="./images/sprite.svg#logo"></use>
           </svg>
         </a>
         <nav class="nav">
-          <ul class="nav-list list">
-            <li class="nav-item">
-              <a class="nav-link link" href="">О нас</a>
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link link" href="">О нас</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link link" href="">Услуги и цены</a>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Услуги и цены</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link link" href="">Мастера</a>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Мастера</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link link" href="">Контакты</a>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <div class="header-group">
-          <a class="header-phone link" href="tel:+380441111111"
+        <div class="header__group">
+          <a class="header__phone link" href="tel:+380441111111"
             >+38 044 111 11 11</a
           >
-          <button class="main-btn main-btn-mode-dark" type="button">
+          <button class="main-btn main-btn--mode-dark" type="button">
             онлайн-запись
           </button>
         </div>
+        <button
+          class="menu-button"
+          type="button"
+          data-menu-button
+          aria-expanded="false"
+        >
+          <svg class="menu-icon" width="40" height="40">
+            <use
+              class="menu-icon-open"
+              href="./images/sprite.svg#icon-menu"
+            ></use>
+            <use
+              class="menu-icon-close"
+              href="./images/sprite.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-overlay" data-menu>
+          <div class="menu">
+            <nav class="menu__nav">
+              <ul class="menu__nav-list list">
+                <li class="menu__nav-item">
+                  <a class="menu__nav-link link" href="">О нас</a>
+                </li>
+                <li class="menu__nav-item">
+                  <a class="menu__nav-link link" href="">Услуги и цены</a>
+                </li>
+                <li class="menu__nav-item">
+                  <a class="menu__nav-link link" href="">Мастера</a>
+                </li>
+                <li class="menu__nav-item">
+                  <a class="menu__nav-link link" href="">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="menu__group">
+              <a class="menu__phone link" href="tel:+380441111111"
+                >+38 044 111 11 11</a
+              >
+              <button class="main-btn main-btn--mode-light" type="button">
+                онлайн-запись
+              </button>
+            </div>
+            <ul class="menu__socials public-socials list">
+              <li class="public-socials__item">
+                <a class="public-socials__link link" href="" lang="en"
+                  >Instagram</a
+                >
+              </li>
+              <li class="public-socials__item">
+                <a class="public-socials__link link" href="" lang="en"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </header>
+    </header> -->
 
     <!-- Uniaue content -->
     <main>
       <!-- Hero section -->
-      <section class="section hero">
-        <div class="container hero-section">
-          <div class="hero-left-side">
-            <ul class="hero-socials hero-list list">
-              <li class="hero-item">
-                <a class="public-link link" href="" lang="en">Instagram</a>
+      <!-- <section class="section hero">
+        <div class="container hero__container">
+          <div class="hero__left">
+            <ul class="hero__socials public-socials list">
+              <li class="public-socials__item">
+                <a class="public-socials__link link" href="" lang="en"
+                  >Instagram</a
+                >
               </li>
-              <li class="hero-item">
-                <a class="public-link link" href="" lang="en">Youtube</a>
+              <li class="public-socials__item">
+                <a class="public-socials__link link" href="" lang="en"
+                  >Youtube</a
+                >
               </li>
             </ul>
           </div>
 
-          <div class="hero-right-side">
-            <p class="uppertitle uppertitle-mode-dark" lang="en">
+          <div class="hero__right">
+            <p class="uppertitle uppertitle--mode-dark" lang="en">
               A hair salon for men in Kyiv
             </p>
-            <h1 class="hero-title">BarberShop</h1>
-            <p class="subtitle subtitle-mode-dark">
+            <h1 class="hero__title">BarberShop</h1>
+            <p class="subtitle subtitle--mode-dark">
               Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно
               и со вкусом.
             </p>
           </div>
 
-          <ul class="slider-btn hero-list list">
-            <li class="hero-item">
-              <button class="hero-btn hero-btn-disable" type="button">
-                Назад
-              </button>
-            </li>
-            <li class="hero-item">
-              <button class="hero-btn" type="button">Вперед</button>
-            </li>
-          </ul>
+          <div class="slider">
+            <ul class="slider__list list">
+              <li class="slider__item">
+                <button class="slider__btn slider__btn--disable" type="button">
+                  Назад
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__btn" type="button">Вперед</button>
+              </li>
+            </ul>
+          </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- About us section -->
-      <section class="section about">
+      <!-- <section class="section about">
         <div class="container about-container">
           <ul class="about-list list">
             <li class="about-item">
@@ -124,11 +183,11 @@
             </li>
           </ul>
           <div class="about-right-side">
-            <p class="uppertitle uppertitle-mode-light">О нас</p>
-            <h2 class="title title-mode-light">
+            <p class="uppertitle uppertitle--mode-light">О нас</p>
+            <h2 class="title title--mode-light">
               Лучший Барбершоп твоего города
             </h2>
-            <h3 class="subtitle subtitle-mode-light about-subtitle">
+            <h3 class="subtitle subtitle--mode-light about-subtitle">
               Если ты хочешь добавить в свой образ больше уверенности – тебе
               точно к нам.
             </h3>
@@ -139,20 +198,20 @@
               клиентами "на одной волне". Поэтому, мы всегда готовы
               усовершенствовать каждого, кто к нам приходит!
             </p>
-            <button class="main-btn main-btn-mode-light" type="button">
+            <button class="main-btn main-btn--mode-light" type="button">
               онлайн-запись
             </button>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Price section -->
       <section class="section price">
         <div class="container">
-          <p class="uppertitle uppertitle-mode-dark">
+          <p class="uppertitle uppertitle--mode-dark">
             Проведи время в компании лучших мастеров
           </p>
-          <h2 class="title title-mode-dark">Услуги и цены</h2>
+          <h2 class="title title--mode-dark">Услуги и цены</h2>
           <ul class="price-list list">
             <li class="price-item">
               <ul class="price-inner-list list">
@@ -197,14 +256,14 @@
               </ul>
             </li>
           </ul>
-          <button class="main-btn main-btn-mode-dark" type="button">
+          <button class="main-btn main-btn--mode-dark" type="button">
             онлайн-запись
           </button>
         </div>
       </section>
 
       <!-- Advantages section -->
-      <section class="section advantages">
+      <!-- <section class="section advantages">
         <div class="container advantages-container">
           <ul class="advantages-list list">
             <li class="advantages-item">
@@ -225,27 +284,27 @@
             </li>
           </ul>
           <div class="advantages-right-side">
-            <p class="uppertitle uppertitle-mode-light">
+            <p class="uppertitle uppertitle--mode-light">
               старая традиционная школа
             </p>
-            <h2 class="title title-mode-light">
+            <h2 class="title title--mode-light">
               Почему приходят именно к нам?
             </h2>
-            <p class="subtitle subtitle-mode-light">
+            <p class="subtitle subtitle--mode-light">
               О нас говорят только хорошее. Но лучше 1 раз увидеть и
               прочувствовать, чем 10 раз прочитать.
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Team section -->
-      <section class="section team">
+      <!-- <section class="section team">
         <div class="container">
-          <p class="uppertitle uppertitle-mode-light">
+          <p class="uppertitle uppertitle--mode-light">
             для настоящих ценителей атмосферы
           </p>
-          <h2 class="title title-mode-light">Наши мастера</h2>
+          <h2 class="title title--mode-light">Наши мастера</h2>
           <ul class="team-list list grid">
             <li class="team-member grid-item">
               <img
@@ -450,25 +509,105 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Gallery section  -->
-      <section class="section gallery">
+      <!-- <section class="section gallery">
         <div class="container">
-          <p class="uppertitle uppertitle-mode-light">
+          <p class="uppertitle uppertitle--mode-light">
             На латинском языке “барба” означает “борода”
           </p>
           <h2 class="visually-hidden" aria-hidden="true">Галерея Барбершопа</h2>
           <ul class="gallery-list list grid">
-            <li class="gallery-item grid-item" data-title="sale">
-              <img
+            <li class="gallery-item grid-item" data-title="sale"> -->
+      <!-- <img
                 class="gallery-img"
-                src="./images/gallery/gallery1.jpeg"
+                srcset="
+                  ./images/gallery/gallery1_lg.jpeg   1x,
+                  ./images/gallery/gallery1@2x_lg.jpg 2x
+                "
+                src="./images/gallery/gallery1_lg.jpeg"
                 alt=""
                 width="270"
                 height="360"
-              />
-            </li>
+              /> -->
+
+      <!-- 960px - підраховане браузером значення ширини екрану -->
+      <!-- <img
+                class="gallery-img"
+                srcset="
+                  ./images/gallery-w/img-480.jpg   480w,
+                  ./images/gallery-w/img-768.jpg   768w,
+                  ./images/gallery-w/img-1200.jpg 1200w
+                "
+                sizes="(min-width: 768px) 768px, (min-width: 480px) 480px, 100vw"
+                src="./images/gallery-w/img-480.jpg"
+                alt="gallery"
+                width="418"
+                height="360"
+              /> -->
+      <!-- <picture>
+                <source
+                  srcset="
+                    ./images/gallery/gallery1_lg.webp    1x,
+                    ./images/gallery/gallery1@2x_lg.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/gallery1_lg.jpg    1x,
+                    ./images/gallery/gallery1@2x_lg.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+
+                <source
+                  srcset="
+                    ./images/gallery/gallery1_md.webp    1x,
+                    ./images/gallery/gallery1@2x_md.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/gallery1_md.jpg    1x,
+                    ./images/gallery/gallery1@2x_md.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+
+                <source
+                  srcset="
+                    ./images/gallery/gallery1_sm.webp    1x,
+                    ./images/gallery/gallery1@2x_sm.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/gallery1_sm.jpg    1x,
+                    ./images/gallery/gallery1@2x_sm.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+
+                <img
+                  class="gallery-img"
+                  src="./images/gallery/gallery1_sm.jpg"
+                  alt=""
+                  width="418"
+                  height="360"
+                  loading="lazy"
+                />
+              </picture> -->
+      <!-- </li>
             <li class="gallery-item grid-item" data-title="sold out">
               <img
                 class="gallery-img"
@@ -498,13 +637,13 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Contacts section -->
-      <section class="section contacts">
+      <!-- <section class="section contacts">
         <div class="container contacts-container">
           <article class="contacts-form-block">
-            <h2 class="title title-mode-dark">Онлайн-запись</h2>
+            <h2 class="title title--mode-dark">Онлайн-запись</h2>
             <form class="contacts-form">
               <div class="contacts-form-group">
                 <label class="contacts-form-tag">
@@ -534,13 +673,13 @@
                   ></textarea>
                 </label>
               </div>
-              <button class="main-btn main-btn-mode-dark" type="submit">
+              <button class="main-btn main-btn--mode-dark" type="submit">
                 отправить
               </button>
             </form>
           </article>
           <article class="contacts-info-block">
-            <h2 class="title title-mode-dark">Контакты</h2>
+            <h2 class="title title--mode-dark">Контакты</h2>
             <ul class="contacts-list list">
               <li class="contacts-item">
                 <address class="contacts-address">
@@ -571,29 +710,31 @@
               </li>
             </ul>
 
-            <h3 class="uppertitle uppertitle-mode-dark">время работы</h3>
+            <h3 class="uppertitle uppertitle--mode-dark">время работы</h3>
             <p class="contacts-schedule">
               Ежедневно с <time datetime="9:00">9:00</time> до
               <time datetime="22:00">22:00</time>
             </p>
           </article>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Footer section -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <p class="footer-copyright">&#169; Copyright 2020</p>
-        <ul class="footer-list list">
-          <li class="footer-item">
-            <a class="public-link link" href="">Instagram</a>
+        <ul class="footer-list public-socials list">
+          <li class="public-socials__item">
+            <a class="public-socials__link link" href="">Instagram</a>
           </li>
-          <li class="footer-item">
-            <a class="public-link link" href="">Youtube</a>
+          <li class="public-socials__item">
+            <a class="public-socials__link link" href="">Youtube</a>
           </li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

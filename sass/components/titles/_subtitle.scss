@@ -1,0 +1,17 @@
+.subtitle {
+  font-size: 16px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  @include mq(desktop) {
+    font-size: 18px;
+  }
+}
+
+.subtitle--mode-light {
+  color: var(--main-txt--mode-light);
+}
+
+.subtitle--mode-dark {
+  color: var(--main-txt--mode-dark);
+}
